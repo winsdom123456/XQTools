@@ -9,6 +9,8 @@
 // This is the first Git Project
 #import "ViewController.h"
 #import "Person.h"
+#import "UIAlertView+Block.h"
+#import "ScrollViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -27,7 +29,7 @@
     NSLog(@"%@", NSStringFromClass([self class]));
     NSLog(@"%@", NSStringFromClass([super class]));
     [self.view addSubview:self.tableView];
-    self.dataArray = @[@"Label"];
+    self.dataArray = @[@"Label", @"AlertView", @"ScrollView"];
 //    CADisplayLink *link = [CADisplayLink displayLinkWithTarget:self selector:@selector(flashAction)];
 //    link.frameInterval = 50;
 //    [link addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
@@ -66,7 +68,14 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-     [NSMutableArray isSubclassOfClass:[NSArray class]];
+    if (indexPath.row == 1) {
+        [UIAlertView showWithTitle:@"Test" message:@"AlertView Block" cancelButtonTitle:@"OK" otherButtonTitles:@[@"OtherButton"] clickedBlock:^(UIAlertView *alertView, NSInteger buttonIndex) {
+            NSLog(@"Success");
+        }];
+    } else if (indexPath.row == 2) {
+        ScrollViewController *controller = [[ScrollViewController alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
