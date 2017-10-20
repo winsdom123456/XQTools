@@ -14,6 +14,9 @@
 		1737E2261F6928240020BAD5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1737E2251F6928240020BAD5 /* Person.m */; };
 		173823881F8F113000E47655 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 173823871F8F113000E47655 /* UIAlertView+Block.m */; };
 		1738239E1F945C6800E47655 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1738239D1F945C6800E47655 /* ScrollViewController.m */; };
+		17AC52C61F9754540072F9B6 /* NetworkingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AC52C51F9754530072F9B6 /* NetworkingController.m */; };
+		17AC52DC1F988AE30072F9B6 /* First.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC52DB1F988AE30072F9B6 /* First.swift */; };
+		17AC52DE1F988B250072F9B6 /* Second.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC52DD1F988B250072F9B6 /* Second.swift */; };
 		17D0CE401F6190C0002C5409 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D0CE3F1F6190C0002C5409 /* Images.xcassets */; };
 		CC2DBCD1682CD05E1F65BE13 /* libPods-GXQTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F39B8FD7BAF0EC45252B116B /* libPods-GXQTools.a */; };
 /* End PBXBuildFile section */
@@ -33,6 +36,11 @@
 		173823871F8F113000E47655 /* UIAlertView+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 		1738239C1F945C6800E47655 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		1738239D1F945C6800E47655 /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		17AC52C41F9754530072F9B6 /* NetworkingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkingController.h; sourceTree = "<group>"; };
+		17AC52C51F9754530072F9B6 /* NetworkingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkingController.m; sourceTree = "<group>"; };
+		17AC52DA1F988AE30072F9B6 /* GXQTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXQTools-Bridging-Header.h"; sourceTree = "<group>"; };
+		17AC52DB1F988AE30072F9B6 /* First.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = First.swift; sourceTree = "<group>"; };
+		17AC52DD1F988B250072F9B6 /* Second.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second.swift; sourceTree = "<group>"; };
 		17D0CE3F1F6190C0002C5409 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27652075417F665F8B101965 /* Pods-GXQTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXQTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXQTools/Pods-GXQTools.debug.xcconfig"; sourceTree = "<group>"; };
 		B3DA5525F7277E4B58CF69BC /* Pods-GXQTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXQTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXQTools/Pods-GXQTools.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +80,8 @@
 		172CABCC1F51B21400293974 /* GXQTools */ = {
 			isa = PBXGroup;
 			children = (
+				17AC52D91F988AB30072F9B6 /* SwiftExample */,
+				17AC52C31F9754340072F9B6 /* AFNetworkingUse */,
 				1738239B1F945C4A00E47655 /* ScrollViewConstraint */,
 				173823851F8F10D800E47655 /* UIAlertViewBlock */,
 				172CABD01F51B21400293974 /* AppDelegate.h */,
@@ -112,6 +122,25 @@
 				1738239D1F945C6800E47655 /* ScrollViewController.m */,
 			);
 			path = ScrollViewConstraint;
+			sourceTree = "<group>";
+		};
+		17AC52C31F9754340072F9B6 /* AFNetworkingUse */ = {
+			isa = PBXGroup;
+			children = (
+				17AC52C41F9754530072F9B6 /* NetworkingController.h */,
+				17AC52C51F9754530072F9B6 /* NetworkingController.m */,
+			);
+			path = AFNetworkingUse;
+			sourceTree = "<group>";
+		};
+		17AC52D91F988AB30072F9B6 /* SwiftExample */ = {
+			isa = PBXGroup;
+			children = (
+				17AC52DB1F988AE30072F9B6 /* First.swift */,
+				17AC52DA1F988AE30072F9B6 /* GXQTools-Bridging-Header.h */,
+				17AC52DD1F988B250072F9B6 /* Second.swift */,
+			);
+			path = SwiftExample;
 			sourceTree = "<group>";
 		};
 		BC22B6551C11062FED02A7F8 /* Pods */ = {
@@ -166,6 +195,7 @@
 					172CABC91F51B21400293974 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 6UYL75226Q;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -256,10 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				172CABD51F51B21400293974 /* ViewController.m in Sources */,
+				17AC52C61F9754540072F9B6 /* NetworkingController.m in Sources */,
 				172CABD21F51B21400293974 /* AppDelegate.m in Sources */,
 				173823881F8F113000E47655 /* UIAlertView+Block.m in Sources */,
 				1738239E1F945C6800E47655 /* ScrollViewController.m in Sources */,
+				17AC52DE1F988B250072F9B6 /* Second.swift in Sources */,
 				1737E2261F6928240020BAD5 /* Person.m in Sources */,
+				17AC52DC1F988AE30072F9B6 /* First.swift in Sources */,
 				172CABCF1F51B21400293974 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GXQTools/Info.plist;
@@ -362,6 +396,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gxq.GXQTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GXQTools/SwiftExample/GXQTools-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -372,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GXQTools/Info.plist;
@@ -379,6 +417,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gxq.GXQTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GXQTools/SwiftExample/GXQTools-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
